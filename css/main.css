@@ -1,0 +1,74 @@
+	*{
+	margin: 0;
+	padding: 0;
+}
+
+.schedule_3 tr td{
+	padding: 8px 11px 11px;
+}
+
+.schedule_3{
+	float: left;
+	width: 55%;
+	border-collapse: collapse;
+	border: 2px solid yellow;
+	margin: 1%;
+	text-align: center;
+}
+
+.places th{
+	border-bottom: 2px solid yellow;
+}
+
+.schedule_3 tr:hover{
+	background-color: rgb(250,250,200);
+}
+
+.schedule_3 tr:hover:first-child{
+	background-color: white;
+}
+
+.editing_container{
+	float: right;
+	width: 40%;
+	margin: 1%;
+}
+
+form{
+	margin-bottom: 10px;
+	background-color: rgb(240, 240, 240);
+}
+
+a.buttons {
+    display: block;
+    text-align: center;
+    width: calc(100% - 20px);
+    margin: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border-radius: 3px;
+    padding: 7px 0px;
+    text-decoration: none;
+}
+
+a.mini {
+    width: calc(40% - 20px);
+}
+
+a.green {
+    background-color: rgb( 43, 153, 91 );
+    border: 1px solid rgb( 33, 126, 74 );
+}
+
+a.green:hover {
+    background-color: rgb( 75, 183, 141 );
+}
+
+a.red {
+    background-color: crimson;
+    border: 1px solid darkred;
+}
+
+a.red:hover {
+    background-color: lightcoral;
+}

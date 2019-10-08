@@ -1,0 +1,103 @@
+*{
+	margin: 0px;
+}
+
+nav table{
+	min-height: 5vh;
+	background-color: #d9edf7;
+	border: 1px dotted #3a87ad;
+	font-family: fantasy;
+	width: 100%;
+	border-spacing: 10px; 
+}
+
+a{
+	text-decoration: none;
+	color: rgb(20, 20, 140);
+}
+nav td{
+	padding: 10px;
+	background-color: rgba(	50, 55, 150, 0.5);
+	border: 2px solid rgb(50, 50, 155);	
+	text-align: center;
+	width: 15%;					// to-do
+}	
+
+img {
+	width: 150px;
+	margin: 5px;
+}
+
+nav td:hover{
+	background-color: rgba(150, 15, 150, 0.5);	
+}	
+
+
+main table {
+	//background-color: rgb(245, 245, 255);
+	font-family: fantasy;
+	//border-spacing: 10px;
+	border-collapse: collapse;
+}
+
+.line_top{
+	border-top: 20px solid white;//rgba(200, 200, 255, 0.5);;
+}
+
+.line_right{
+
+	margin-right: 20px;
+}
+
+main td{
+	padding: 0px 10px;
+	//border: 1px solid rgb(50, 50, 155);	
+	text-align: center;
+	//border: 2px solid rgba(245, 245, 255, 0.5);
+}	
+
+
+header{
+	min-height: 5vh;
+}
+
+main{
+	min-height: calc(95vh - 170px);
+}
+
+footer{
+	background-color: rgba(20, 20, 150, 0.5);
+	text-align: center;
+}
+
+.name{
+	font-family: serif;
+}	
+
+.description{
+	vertical-align: top;
+	font-family: serif;
+	text-align: left;
+	width: 30%;
+}
+
+.price{
+	vertical-align: bottom;
+	color: red;
+	font-family: serif;
+}
+
+.footer_table{
+	//float: left;
+	align-items: center;
+}
+
+.footer_table tr td, .footer_table caption{
+	text-align: left;
+}
+
+
+
+.footer_container{
+	padding: 20px 20px 0 20px;
+}

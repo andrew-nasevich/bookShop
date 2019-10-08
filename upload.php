@@ -1,0 +1,16 @@
+<?php
+
+    if (!file_exists($_POST['currDir'] . '\\' . $_FILES['uploadingFile']['name'])){
+		
+		$path = $_GET['currDir'].'\\'.$_GET['newname'];
+		 
+        move_uploaded_file($_FILES['uploadingFile']['tmp_name'], $_POST['currDir'] . '\\' . $_FILES['uploadingFile']['name']);
+		
+		session_start();
+		$link = mysqli_connect($_SESSION['host'], $_SESSION['user'], $_SESSION['pass'], $_SESSION['db']);
+		$query = "INSERT INTO admin_actions SET action='upload', date='".date('Y-m-d')."', dir='".preg_quote($path)."'";
+        mysqli_query($link, $query);
+		
+    }
+    header('Location: laba3.php?currDir='.$_POST['currDir']);
+?>
